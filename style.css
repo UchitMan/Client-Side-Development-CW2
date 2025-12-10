@@ -1,0 +1,14 @@
+/* GALLERY PAGE */
+.gallery-container img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* SERVICES PAGE */
+.service-item p {
+    color: #264653;
+}
