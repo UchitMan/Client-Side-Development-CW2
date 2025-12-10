@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>The Spice Route | Contact / Reservation</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <h2>The Spice Route</h2>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" style="background: url('assests/Banner copy.jpg') top/cover no-repeat; background-position: top;">
+    <div class="hero-overlay"></div> <!-- overlay for blur -->
+    <div class="hero-content">
+      <h1>Contact/Reservation</h1>
+      <p class="hero-tagline">Savor the Spice</p>
+    </div>
+  </section>
+  
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <p>Fill out the form below to make a reservation or send us a message.</p>
+
+    <form id="contactForm" novalidate>
+      <label for="name">Name <span style="color:#E76F51">*</span></label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+      <label for="email">Email <span style="color:#E76F51">*</span></label>
+      <input type="email" id="email" name="email" placeholder="Your email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="+44 7700 900000">
+
+      <label for="date">Reservation Date</label>
+      <input type="date" id="date" name="date">
+
+      <label for="time">Reservation Time</label>
+      <input type="time" id="time" name="time">
+
+      <label for="message">Message <span style="color:#E76F51">*</span></label>
+      <textarea id="message" name="message" placeholder="Your message..." rows="5" required></textarea>
+
+      <button type="submit" id="submitBtn">Submit</button>
+    </form>
+
+    <p id="formMessage" aria-live="polite" style="margin-top:20px; color:#E76F51;"></p>
+  </section>
+
+  <!-- Modal confirmation -->
+  <div id="confirmModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-inner" role="document">
+      <button class="modal-close" id="closeModal" aria-label="Close confirmation">&times;</button>
+      <h3 id="modalTitle">Reservation Confirmed</h3>
+      <p id="modalText"></p>
+      <button id="modalOk">OK</button>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 The Spice Route. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
